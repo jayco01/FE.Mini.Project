@@ -45,7 +45,7 @@ Header
 
 header {
     display: flex;
-    padding: 24px 24px;
+    padding: 8px 8px;
     background-color: rgb(94, 91, 91);
     height: calc(100vh - 70px);
     justify-content: center;
@@ -157,6 +157,7 @@ form {
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
+    padding: 0 24px;
 }
 
 input, textarea {
@@ -181,4 +182,66 @@ footer {
 
 .footer_link {
     padding: 24px;
+}
+
+
+/* Mobile Phone Responsiveness*/
+
+@media (max-width: 728px) {
+
+    .row {
+        width: 100%;
+        flex-direction: column;
+
+    }
+
+    .content_header { 
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 24px;
+        align-items: center;
+    }
+    
+    h1 {
+        width: 100%;
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .subheader {
+        width: 100%;
+        font-size: 28px;
+    }
+
+    .home_button {
+        max-width: 240px;
+
+    }
+    ul {
+        display: none;
+    }
+
+    .section_description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }    
+
+    .section_description--wrapper--paragraph {
+        width: 100%;
+    }
+
+    .about_img--wrapper {
+        width: 100%;
+    }
+
+    #projects .section_description {
+        flex-direction: column-reverse;
+    }
+    
+    
 }
